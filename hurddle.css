@@ -1,0 +1,126 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image:linear-gradient(  hsl(257, 40%, 49%)100%, hsl(300, 69%, 71%)0%
+    );
+    background-attachment: fixed; 
+    color: white;
+}
+.bg-desktop{
+    position: absolute;
+    height: 690px;
+}
+.bg-mobile{
+    display: none;
+}
+.hurddle-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 690px;
+    position: relative;
+    flex-wrap: wrap;
+   
+}
+
+.huddle-logo{
+    height: 45px;
+    margin: 0 0 80px 70px; 
+
+}
+.hurddle-icon{
+    width:5%;
+    margin-right: 500px;
+}
+.icon{
+    height: 450px;
+    margin-left: 60%;
+}
+.hurddle-about{
+   margin: 80px 80px 50px 180px;
+   font-size: 20px;
+   width:33%;
+}
+h1{
+    font-family: Poppins;
+    font-weight: 600;
+}
+p{
+    font-size: 0.92em;
+    line-height: 25px;
+    font-family: Open Sans;
+}
+
+.btn{
+    font-size: 0.8em;
+    height: 3.5em;
+    color:hsl(257, 40%, 49%) ;
+    width: 10em;
+    border-radius: 25px;
+    border-color: transparent;
+}
+.btn:hover{
+    color:hsl(260, 60%, 98%) ;
+    background-color:hsl(300, 69%, 71%);
+}
+.fab{
+    background-color:transparent;
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    left: 300px;
+    top: 80px;
+}
+
+@media screen and (max-width:840px){
+
+    body{
+        margin: 0%;
+        text-align: center;
+    }
+    .bg-desktop{
+        display: none;
+    }
+    .bg-mobile{
+        display: block;
+        position: absolute;
+        height: 690px;
+        width: 375px;
+    }
+    .hurddle-page{
+        position: relative;
+        display: flex;
+    }
+    .huddle-logo{
+        height: 45px;
+    }
+    p{
+        font-size: 1em;
+        margin: 0 25px 0 25px;
+    }
+    .icon{
+     height: 275px;
+     margin-left: 70px;
+    }
+    .hurddle-about{
+        margin: 10px 0px 10px 10px;
+        font-size: 18px;
+        width:100%;
+     }
+     .fab{
+        position: relative;
+        left: 0px;
+        top: 40px;
+    }
+    .btn{
+        margin-top: 15px;
+    }
+}
